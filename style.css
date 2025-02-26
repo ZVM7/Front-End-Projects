@@ -1,0 +1,293 @@
+    body {
+        background-image:url('assets/images/background-desktop.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header {
+        text-align: center;
+        margin-top: 24px;
+    }
+    .lg {
+        transform: scale(0.7);  
+    }
+
+    .header,h1 {
+        color:aliceblue;
+        font-size: 30px;
+        font-weight: 400px;
+        word-spacing: 5px;
+    }
+
+    h2 {
+        font-size: 15px;
+        color: gray;
+    }
+
+    .logo {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .logo:last-child {
+        display: flex;
+        justify-content: flex-start;
+    }
+    form {
+        max-width: 300px;       
+        margin: 0 auto;            
+        padding: 20px;             
+    }
+    
+    form label {
+        display: block;            
+        margin-bottom: 8px;   
+        font-size: 13px; 
+        text-align: left;    
+        color:whitesmoke;
+        font-weight: bold;        
+    }
+    
+    form input[type="text"], 
+    form input[type="email"] {
+        width: 100%;
+        padding: 10px;             
+        margin-bottom: 15px;       
+        border: 2px solid #ccccccdb;    
+        border-radius: 14px;       
+        font-size: 14px; 
+        color: rgb(255, 255, 255);
+        background: linear-gradient(to right, #010b74, #7689f3);
+        box-sizing: border-box;
+        
+    }
+
+    input::placeholder {
+        color: #ffffff; 
+    }
+    form input, form button {
+        pointer-events: auto; /* Enable interactions for form elements but still allow only keyboard */
+    }
+
+    form input[type="submit"] {
+        width: 100%;               
+        padding: 12px;             
+        background-color: #ea9758; 
+        color: rgb(19, 16, 16);
+        font-weight: bold;             
+        border-radius: 11px;        
+        font-size: 14px;           
+    }
+    .error-message {
+        display: none; 
+        color: red;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .input-container {
+        position: relative;
+        width: 300px;  
+        height: 110px; 
+        border: 2px dashed #ccc;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .upload-icon {
+        margin-top : -45px;
+        width: 50px;
+        height: 45px;
+        border-radius: 12px;
+        border: 1px dashed white;
+        margin-bottom: 1px;
+        padding: 3px 3px;;
+        cursor: pointer;
+    }
+    
+    .buttons-container {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 25px;
+    }
+    
+    button {
+        padding: 5px 2px;
+        background: linear-gradient(to right, #1e3c72, #2a5298); 
+        height: 30px;
+        width : 122px;
+        font-size: 11px;
+        color: white;
+        border-color: rgb(255, 239, 218);
+        border-radius: 9px;
+        cursor: pointer;
+    }
+    
+    button.hidden {
+        display: none;
+    }
+    
+    h3.tagup {
+        font-size: 14px;
+        position:absolute;
+        margin-top: 60px;
+        color: rgb(224, 221, 221);
+    } 
+
+    h3.hidden{
+        display: none;
+    }
+
+    .image-request {
+        margin-top: -22px;
+        display:flex;
+        justify-content: flex-start;
+        gap : 5px;
+    }
+
+    div.image-request {
+        font-size: 10px;
+        color: #ccc;
+    }
+
+
+    .congrats-header {
+        margin-top: 45px;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        background-image:url('assets/images/background-desktop.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .congrats-header > img {
+        width: 155px;
+    }
+
+    .gradient-text {
+    background-image: linear-gradient(to right, #ff7e5f, #f9efe7); /* Gradient colors */
+    color: transparent;
+    background-clip: text;
+    } 
+
+    .congr-name {
+        margin-top: 49px;
+        font-size: 46px;   
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .congr-email {
+        margin-top: 2px;
+        font-size: 17px;
+        color: rgb(213, 213, 213);
+        text-align: center;
+        word-spacing: 7px;
+        font-weight: lighter;
+        line-height: 23px;  
+    }
+
+    .color-email {
+        color :#f39146;
+    }
+
+    .ticket{
+        margin-top: 45px;
+        text-align: center;
+        position: relative;
+
+    }
+
+    .main-backgr{
+        width: 400px;
+
+    }
+
+    .logo-tick {
+        position: absolute;
+        top: -15px;
+        left: 575px;
+        width: 170px;
+        height: 100px;
+    }   
+    
+    .adres {
+        position: absolute;
+        left : 615px;
+        font-size : 12px;
+        bottom: 110px;
+        color: #918a8a;
+        word-spacing: 5px;
+        font-weight: bold;
+    }
+
+    #contact-profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: -80px;
+        margin-left: -135px
+
+
+
+    }
+
+    .profile-pic {
+        width : 50px;
+        height: 50px;
+        border-radius:10px ;
+        margin-right: 70px;
+    }
+
+    .info-content {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .full-name, .prof-email {
+        margin: 2px;
+    }
+    .prof-email {
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    .full-name {
+        font-size: 25px;
+        margin-left: -55px;
+    }
+
+    .github-logo{
+        display: flex;
+        justify-content: flex-end;
+        width: 5x;  
+        height: 15px; 
+        margin-top: -19px;
+        margin-left : -212px;
+    }
+
+    #tic-n{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        color: #93908e;
+    }
+
+    #tic.n , h5 {
+        transform: rotate(90deg);
+        letter-spacing:  2px;
+        font-size: 17px;
+        margin-left: 221px;
+        margin-top: -160px;
+    }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+    <div class="header">
+      <a href="\"><img class="lg" src="assets/images/logo-full.svg"></a>
+      <h1><strong>Your Journey To Coding Conf<br> 2025 Starts Here !</strong></h1>
+      <h2>Secure your spot at next year's biggest coding cofrerence.</h2>
+
+      <form id="myForm"  method="POST" enctype="multipart/form-data">
+        <label for="file-upload">Upload Avatar</label>
+        <div class="input-container">
+          <img src="assets/images/icon-upload.svg" alt="Upload Icon" id="upload-icon" class="upload-icon" />
+          <h3 class='tagup'> Click On Icon To Upload</h3>
+
+          <input type="file" id="file-upload" name="photo" accept="image/*" style="display: none;">
+          <div class="buttons-container">
+            <button id="remove-btn" class="hidden">Remove Image</button>
+            <button id="change-btn" class="hidden">Change Image</button>
+          </div>
+        </div>
+        <div id="fileError" class="error-message" style="display: none;">
+          Please upload a PNG or JPG file that is less than 500KB.
+        </div>
+        <div class="image-request">
+          <img src="assets/images/icon-info.svg">
+          <h4> Upload your photo (JPG or PNG, max size: 500kb).</h4>
+        </div>
+        <label for="name"> Full Name</label>
+        <input type="text" id="name" aria-describedby="nameHint nameError" >
+        <small id="name-hint" hidden>Please enter your full name.</small>
+        <div id="nameError"  aria-live="assertive" class="error-message" style="display:none;">
+          Full name is required.
+        </div>
+
+        <label for="email"> Email Address </label>
+        <input type="Email" placeholder="youremail@example.com" id="email" aria-describedby="emailHint emsilError">
+        <small id="email-hint" hidden>Please enter a valid email address (e.g., example@example.com).</small>
+        <div id="emailError"  aria-live="assertive" class="error-message" style="display:none;">
+          Please enter a valid email address.
+        </div>
+
+        <label for="user"> Github Username</label>
+        <input type="text" placeholder='Your username' id='user'aria-describedby="usernameHint usernameError">
+        <small id="usernameHint" hidden>Please enter your GitHub username (e.g., ZVM7).</small>
+        <div id="usernameError" aria-live="assertive" class="error-message"style="display:none;" >
+          GitHub username is required.
+        </div>
+        
+        <input type="submit"  value="Generate My Ticket">
+      </form>
+    </div>
+    <div class="logo">
+      <img src="assets\images\pattern-squiggly-line-top.svg">
+      <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg">
+    </div>
+
+  <div class="attribution">
+    Coded by <a href="https://www.frontendmentor.io/profile/ZVM7">Your Name Here</a>.
+  </div>
+  <script src="script.js" defer></script>
+
+</body>
+</html>
